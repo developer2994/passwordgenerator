@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+  color: #111827;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.app-container {
+  width: min(1040px, 92%);
+  margin: 0 auto;
+  padding: 48px 0 32px;
+}
+
+.main-line {
+  text-align: center;
+}
+
+.inputpass {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #111827;
+}
+
+#links {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 28px;
+}
+
+#showHowto {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #2563eb;
+}
+
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid #dbe3ef;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  padding: 28px 32px;
+}
+
+#button-line {
+  width: 100%;
+  min-height: 230px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.card-title p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.password-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.label-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 28px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.radio-label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #2563eb;
+}
+
+.word-count {
+  width: 72px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.create,
+.Namecreate {
+  min-width: 150px;
+  height: 48px;
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.copy,
+.mail-button {
+  min-width: 150px;
+  height: 48px;
+  border: 1px solid #cbd5e1;
+  color: #2563eb;
+  background-color: white;
+}
+
+.result-label {
+  display: block;
+  margin-top: 28px;
+}
+
+.result-label span,
+.mail-text-label span,
+.form-item span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.result {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  font-size: 18px;
+}
+
+.line-line {
+  display: none;
+}
+
+.mail-card {
+  width: 100%;
+}
+
+.Name-line {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 160px;
+  gap: 24px;
+  align-items: end;
+  text-align: left;
+}
+
+.submitName,
+.date-line {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  font-size: 16px;
+}
+
+.mail-text-label {
+  display: block;
+  margin-top: 24px;
+}
+
+.Email-line {
+  display: block;
+  width: 100%;
+  height: 170px;
+  padding: 16px;
+  margin: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.mail-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+  color: #334155;
+}
+
+footer span {
+  color: #2563eb;
+}
+
+.howto-container {
+  width: min(760px, 90%);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.title {
+  text-align: center;
+  color: #111827;
+}
+
+.main-text {
+  width: 100%;
+  margin: 20px auto 40px;
+  padding: 24px;
+  line-height: 1.9;
+  background-color: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#backApp {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  .app-container {
+    width: 92%;
+    padding-top: 32px;
+  }
+
+  .inputpass {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .password-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .create,
+  .copy,
+  .Namecreate,
+  .mail-button {
+    width: 100%;
+  }
+
+  .Name-line {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-label {
+    margin-bottom: 12px;
+  }
+
+  .Email-line,
+  .main-text {
+    width: 100%;
+  }
+}

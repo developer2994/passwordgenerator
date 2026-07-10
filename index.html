@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード生成アプリ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <section id="app-page" class="page active">
+
+      <div class="app-container">
+
+        <section class="main-line">
+          <h1 class="inputpass">パスワード生成アプリ</h1>
+        </section>
+
+        <div id="links">
+          <a href="#" id="showHowto">
+            <span class="help-icon">?</span>
+            アプリの使い方
+          </a>
+        </div>
+
+        <div id="button-line" class="card">
+          <div class="card-title">
+            <span class="icon">🔑</span>
+            <p>パスワードを生成する</p>
+          </div>
+
+          <div class="password-top">
+            <div class="password-options">
+              <p class="label-title">文字数を選択</p>
+
+              <label class="radio-label">
+                <input type="radio" name="option" class="lengthOption">
+                <input type="number" class="word-count" min="3">文字
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="option" class="twentywords" checked>
+                20文字
+              </label>
+            </div>
+
+            <div class="button-group">
+              <button class="create">生成</button>
+              <button class="copy">コピー</button>
+            </div>
+          </div>
+
+          <label class="result-label">
+            <span>生成されたパスワード</span>
+            <input readonly class="result">
+          </label>
+        </div>
+
+        <div class="card mail-card">
+          <div class="card-title">
+            <span class="icon">✉️</span>
+            <p>メール本文を生成する</p>
+          </div>
+
+          <div class="Name-line">
+            <label class="name form-item">
+              <span>送信者</span>
+              <input class="submitName" type="text" placeholder="苗字を入力してください">
+            </label>
+
+            <label class="form-item">
+              <span>回答期限</span>
+              <input type="date" class="date-line" required>
+            </label>
+
+            <button class="Namecreate">生成</button>
+          </div>
+
+          <label class="mail-text-label">
+            <span>メールの本文</span>
+            <textarea readonly class="Email-line" placeholder="メールの本文が表示されます"></textarea>
+          </label>
+
+          <button class="mail-button">コピー</button>
+        </div>
+
+        <footer>Created by <span>Riki Ikeda</span></footer>
+
+      </div>
+    </section>
+
+    <section id="howto-page" class="page">
+      <div class="howto-container">
+
+        <h1 class="title">【パスワードのコピー方法】</h1>
+
+        <p class="main-text">
+          1. 作成するパスワードの文字数を選択する。<br>
+          2. 「生成」ボタンをクリックする。<br>
+          3. ランダムなパスワードが生成される。<br>
+          4. 「コピー」ボタンをクリックしてコピーする。<br>
+        </p>
+
+        <h1 class="title">【メール本文の作成方法】</h1>
+
+        <p class="main-text">
+          1. メール送信者の苗字を入力する。<br>
+          2. 希望の対応期限を選択する。<br>
+          3. 「生成」ボタンをクリックする。<br>
+          4. 生成されたメール本文に、送信者の名前と対応期日が記載されているか確認する。<br>
+          5. 「コピー」ボタンをクリックしてメールをコピーする。<br>
+        </p>
+
+        <div class="back-link">
+          <a href="#" id="backApp">アプリに戻る</a>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
