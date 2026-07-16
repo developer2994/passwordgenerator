@@ -294,6 +294,10 @@ footer span {
 }
 
 @media screen and (max-width: 700px) {
+  .Name-line {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .app-container {
     width: 92%;
     padding-top: 32px;
